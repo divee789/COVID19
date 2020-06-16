@@ -1,0 +1,93 @@
+header {
+    padding-top: 1rem;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) -29.64%, #FFF8F8 45.66%);
+    position: relative;
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 7.5%;
+        margin-top: 2rem;
+
+        @media screen and (max-width:600px) {
+            flex-direction: column-reverse;
+            margin: 0 auto;
+            width: 90%;
+            margin-top: 2.5rem;
+        }
+
+        .header_info {
+
+            width: 55%;
+            @media screen and (max-width:600px) {
+                width: 95%;
+                margin-top: 1rem;
+                text-align: center;
+            }
+
+            span,
+            h1 {
+                font-family: 'Red Hat Display';
+                font-weight: bold;
+                line-height: 122%;
+            }
+
+            span {
+                font-size: 16px;
+                color: #FA5652;
+                font-weight: bolder;
+                @media screen and (max-width:600px) {
+                    font-size: 13px;
+                }
+            }
+
+            h1 {
+                font-size: 46px;
+                text-transform: capitalize;
+                font-weight: bolder;
+                margin-top: 0;
+                color: #035755;
+                @media screen and (max-width:600px) {
+                    font-size: 27px;
+                }
+            }
+
+            p {
+                font-size: 17px;
+                font-family: 'Muli';
+                color: #4B4F51;
+                font-weight: 600;
+                line-height: 190%;
+                @media screen and (max-width:600px) {
+                    font-size: 14px;
+                }
+            }
+
+            button {
+                background: #FB4C47;
+                box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+                border-radius: 65px;
+                border: none;
+                padding:.9rem 4rem;
+                color: white;
+                cursor: pointer;
+                margin-top: 2rem;
+                font-size: 18px;
+                font-family: 'Muli';
+            }
+        }
+
+        .header_image {
+            width: 80%;
+            @media screen and (max-width:600px) {
+                width:100%;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
