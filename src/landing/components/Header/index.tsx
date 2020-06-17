@@ -13,7 +13,7 @@ const Header = () => {
         <section id='overview'>
           <div className="header_info">
             <span>COVID-19 Alert</span>
-            <h1>Stay At Home Quarantine To Stop Corona Virus</h1>
+            <h1>Quarantine At Home <br/> To Stop The Corona Virus</h1>
             <p>
               There Is No Specific Medicine To Prevent Or Treat Coronavirus
               Disease (COVID-19). People May Need Supportive Care Too.

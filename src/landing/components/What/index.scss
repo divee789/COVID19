@@ -1,0 +1,72 @@
+.what_section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 4rem auto;
+    position: relative;
+
+    @media screen and (max-width:600px) {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+
+    .smallImage {
+        position: absolute;
+        bottom: -3rem;
+        right: -18rem;
+
+        @media screen and (max-width:600px) {
+            display: none;
+        }
+    }
+
+    .smallImage2 {
+        position: absolute;
+        bottom: -4.5rem;
+        right: 0;
+    }
+
+    div {
+        width: 50%;
+
+        @media screen and (max-width:600px) {
+            width: 100%;
+        }
+
+
+        img {
+            width: 120%;
+            object-fit: cover;
+            margin-left: -8rem;
+
+            @media screen and (max-width:600px) {
+                width: 100%;
+                margin: 0;
+            }
+
+        }
+
+        p {
+            width: 75%;
+            font-size: 15px;
+            font-weight: normal;
+
+            @media screen and (max-width:600px) {
+                width: 100%;
+            }
+
+        }
+
+        button {
+            background: rgba(250, 86, 82, 0.15);
+            color: #FB4C47;
+            font-weight: 600;
+        }
+    }
+}
