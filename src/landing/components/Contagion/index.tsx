@@ -21,7 +21,7 @@ const Contagion = () => (
         <img src={contagionbug} alt="bug" className='bug'/>
         <div className="card">
           <img src={contagion1} alt="Contagious" />
-          <h2>Transmission</h2>
+          <h2>Air Transmission</h2>
           <p>
             Objectively evolve tactical expertise before extensible initiatives.
           </p>

@@ -1,6 +1,6 @@
 .contagion_section {
 
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
 
     @media screen and (max-width:600px) {
@@ -20,6 +20,7 @@
     .sub_text {
         width: 45%;
         margin: 0 auto;
+        font-size: 15px;
         @media screen and (max-width:600px) {
             width:90%;
         }
@@ -53,7 +54,7 @@
 
         .card {
             position: relative;
-            width: 28%;
+            width: 30%;
             padding: 1rem;
             box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
             border-radius: 10px;
@@ -76,8 +77,8 @@
             }
 
             img {
-                height: 278px;
-                width: 258px;
+                height: 218px;
+                width: 208px;
                 object-fit: cover;
             }
 
