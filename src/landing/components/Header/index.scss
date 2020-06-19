@@ -1,54 +1,91 @@
 header {
-    padding-top: 1rem;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) -29.64%, #FFF8F8 45.66%);
-    position: relative;
+  padding-top: 1rem;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) -29.64%,
+    #fff8f8 45.66%
+  );
+  position: relative;
 
-    section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 7.5%;
-        margin-top: 2rem;
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7.5%;
+    margin-top: 2rem;
 
-        @media screen and (max-width:600px) {
-            flex-direction: column-reverse;
-            margin: 0 auto;
-            width: 90%;
-            margin-top: 2.5rem;
-        }
-
-        .header_info {
-
-            h1 {
-                font-size: 46px;
-
-                @media screen and (max-width: 600px){
-                    font-size: 27px;
-                }
-            }
-
-            width: 55%;
-
-            @media screen and (max-width:600px) {
-                width: 95%;
-                margin-top: 1rem;
-                text-align: center;
-            }
-
-
-        }
-
-        .header_image {
-            width: 80%;
-
-            @media screen and (max-width:600px) {
-                width: 100%;
-            }
-
-            img {
-                width: 100%;
-            }
-        }
+    @media screen and (max-width: 700px) {
+      flex-direction: column-reverse;
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 2.5rem;
     }
+
+    .header_info {
+      span {
+        @media screen and (max-width: 1000px) {
+          font-size: 10px;
+        }
+      }
+      h1 {
+        font-size: 46px;
+
+        @media screen and (max-width: 1364px) {
+          font-size: 40px;
+        }
+
+        @media screen and (max-width: 1190px) {
+          font-size: 34px;
+        }
+
+        @media screen and (max-width: 1000px) {
+          font-size: 28px;
+        }
+
+        @media screen and (max-width: 800px) {
+          font-size: 22px;
+        }
+        @media screen and (max-width: 700px) {
+          font-size: 27px;
+        }
+      }
+
+      p {
+        @media screen and (max-width: 1364px) {
+          font-size: 15px;
+        }
+        @media screen and (max-width: 1000px) {
+          font-size: 13px;
+        }
+      }
+
+      button {
+        @media screen and (max-width: 1000px) {
+          font-size: 14px;
+          padding: 0.8rem 3rem;
+        }
+      }
+
+      width: 55%;
+
+      @media screen and (max-width: 700px) {
+        width: 95%;
+        margin-top: 1rem;
+        text-align: center;
+      }
+    }
+
+    .header_image {
+      width: 80%;
+
+      @media screen and (max-width: 700px) {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }

@@ -16,7 +16,7 @@ const Header = () => {
             <h1>Quarantine At Home <br/> To Stop The Corona Virus</h1>
             <p>
               There Is No Specific Medicine To Prevent Or Treat Coronavirus
-              Disease (COVID-19). People May Need Supportive Care Too.
+              Disease (COVID-19). People May Need Supportive Care.
             </p>
             <button>Learn More</button>
           </div>
