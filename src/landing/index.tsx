@@ -4,6 +4,7 @@ import What from "./components/What";
 import Contagion from "./components/Contagion";
 import Symptom from "./components/Symptoms";
 import Prevention from "./components/Prevention";
+import Footer from "./components/Footer";
 
 const LandingPage = () => (
   <>
@@ -12,6 +13,7 @@ const LandingPage = () => (
     <Contagion />
     <Symptom />
     <Prevention />
+    <Footer />
   </>
 );
 
