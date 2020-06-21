@@ -9,7 +9,6 @@ import "./App.scss";
 const history = createBrowserHistory();
 
 function App() {
-  // return <Landing />;
   return (
     <>
       <Router history={history}>

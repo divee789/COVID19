@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import Request from "../API/covid19";
+
+import logo from "../assets/images/logo.png";
+
+import "./index.scss";
 
 const API = new Request();
 
@@ -16,7 +22,6 @@ const Stats = () => {
       try {
         const worldData = await API.getWorldStats();
         const data = await API.getAllCountriesStats();
-        console.log(worldData);
         setWorldStats(worldData);
         setStatistics(data);
       } catch (error) {
@@ -27,16 +32,42 @@ const Stats = () => {
   }, []);
 
   return (
-    <>
+    <header>
+      <nav>
+        <div className="logo_image">
+          <img src={logo} alt="logo" />
+        </div>
+        <div className="nav_items">
+          <Link to="/" className="button_link">
+            Like Us
+          </Link>
+        </div>
+      </nav>
       <div>
-        <p>{worldStats.TotalConfirmed}</p>
-        <p>{worldStats.TotalDeaths}</p>
-        <p>{worldStats.TotalRecovered}</p>
+        <div>
+          <p>Total Cases</p>
+          <p>{worldStats.TotalConfirmed}</p>
+        </div>
+        <div>
+          <p>Total Recovered</p>
+          <p>{worldStats.TotalRecovered}</p>
+        </div>
+        <div>
+          <p>Total Deaths</p>
+          <p>{worldStats.TotalDeaths}</p>
+        </div>
       </div>
-      {statistics.map((stat: any) => {
-        return <p>{stat.country}</p>;
-      })}
-    </>
+      <div className="data_section">
+        {statistics.map((stat: any) => {
+          return (
+            <div className="card">
+              <img src={stat.flag_url} alt="country flag" />
+              <p>{stat.country}</p>
+            </div>
+          );
+        })}
+      </div>
+    </header>
   );
 };
 
