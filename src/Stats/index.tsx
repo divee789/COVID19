@@ -43,26 +43,97 @@ const Stats = () => {
           </Link>
         </div>
       </nav>
-      <div>
+      <div className="total_section">
         <div>
           <p>Total Cases</p>
-          <p>{worldStats.TotalConfirmed}</p>
+          <p>
+            {worldStats.TotalConfirmed.toString().replace(
+              /\B(?=(\d{3})+(?!\d))/g,
+              ",",
+            )}
+          </p>
         </div>
         <div>
           <p>Total Recovered</p>
-          <p>{worldStats.TotalRecovered}</p>
+          <p>
+            {worldStats.TotalRecovered.toString().replace(
+              /\B(?=(\d{3})+(?!\d))/g,
+              ",",
+            )}
+          </p>
         </div>
         <div>
           <p>Total Deaths</p>
-          <p>{worldStats.TotalDeaths}</p>
+          <p>
+            {worldStats.TotalDeaths.toString().replace(
+              /\B(?=(\d{3})+(?!\d))/g,
+              ",",
+            )}
+          </p>
         </div>
       </div>
       <div className="data_section">
         {statistics.map((stat: any) => {
           return (
             <div className="card">
-              <img src={stat.flag_url} alt="country flag" />
-              <p>{stat.country}</p>
+              <img src={stat.countryInfo.flag} alt="country flag" />
+              <div>
+                <div>
+                  <p>Country</p>
+                  <p>{stat.country}</p>
+                </div>
+                <div>
+                  <p>Continent</p>
+                  <p>{stat.continent}</p>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p>Total Cases</p>
+                  <p>{stat.cases}</p>
+                </div>
+                <div>
+                  <p>Critical Cases</p>
+                  <p>{stat.critical}</p>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p>Population</p>
+                  <p>{stat.population}</p>
+                </div>
+                <div>
+                  <p>Total Deaths</p>
+                  <p>{stat.deaths}</p>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <p>Total Recovered</p>
+                  <p>{stat.recovered}</p>
+                </div>
+                <div>
+                  <p>Total tests</p>
+                  <p>{stat.tests}</p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <p>Today Cases</p>
+                  <p>{stat.todayCases}</p>
+                </div>
+                <div>
+                  <p>Today Deaths</p>
+                  <p>{stat.todayDeaths}</p>
+                </div>
+                <div>
+                  <p>Today Recovered</p>
+                  <p>{stat.todayRecovered}</p>
+                </div>
+              </div>
             </div>
           );
         })}
