@@ -92,6 +92,7 @@ const Stats = (props) => {
           </div>
           <div className="search_container">
             <input
+              className="search_input"
               type="text"
               placeholder="Search for a Country by Name"
               onChange={(e) => {
